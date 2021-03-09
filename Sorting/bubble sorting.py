@@ -4,20 +4,15 @@
 import random
 
 def bubblesort(data):
-  for index in range(len(data) -1):
-    swap = Flase
-    for index2 in range(len(data) - index -1):
-      if data[index2] > data[index2 +1]:
-        data[index2], data[index2 +1] = data[index2 +1], data[index2]
-        swap = True
-        
-  if swap == False:
-    break
-return data
+  for count in range(len(data) -1):
+    for index in range(len(data) - count -1):
+      if data[index] > data[index+1]:
+        data[index], data[index+1] = data[index+1], data[index]       
+  return data
 
 data_list = random.sample(range(100),50)
-print(data_list)
-print(bubblesort(data_list))
+data_list
+bubblesort(data_list)
 
 # Result => [64, 56, 98, 97, 75, 52, 59, 10, 17, 92, 66, 47, 86, 46, 96, 48, 
 # 61, 21, 74, 65, 8, 53, 16, 94, 76, 50, 54, 6, 31, 45, 38, 84, 91, 7, 
