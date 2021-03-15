@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 import random
 data = random.sample(range(20),7)
 
@@ -23,20 +20,12 @@ def qsort(data):
     return qsort(left) + [pivot] + qsort(right)
 
 
-# In[5]:
-
-
 data
-
-
-# In[6]:
-
-
 qsort(data)
 
-
-# In[ ]:
-
+# Result => 
+# [14, 15, 2, 8, 19, 3, 11]
+# [2, 3, 8, 11, 14, 15, 19]
 
 
 
